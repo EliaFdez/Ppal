@@ -15,7 +15,7 @@ if __name__ == "__main__":
     N = 10
     lp = []
     for i in range(N):
-        lp.append(Process(target=f,args(f"ana{i}",)))
+        lp.append(Process(target=f,args=(f"ana{i}",)))
     for p in lp:
         p.start()
 
